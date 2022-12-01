@@ -15,7 +15,7 @@ Open Browser To Login Page
     Login Page Should Be Open
 
 Login Page Should Be Open
-    Title Should Be    ฝึกงาน/สหกิจศึกษา
+    Title Should Be    ฝึกงาน/สหกิจศึกษาdddd
 
 
 nickname

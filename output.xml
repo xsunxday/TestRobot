@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.8.8 on win32)" generated="20221129 13:36:55.338" rpa="false" schemaversion="3">
-<suite id="s1" name="First Robot" source="C:\Users\SUNEASTER\Desktop\Robot\first_robot.robot">
+<robot generator="Robot 6.0.1 (Python 3.8.8 on win32)" generated="20221129 17:15:02.677" rpa="false" schemaversion="3">
+<suite id="s1" name="First Robot" source="C:\xampp\htdocs\TestRobot\first_robot.robot">
 <test id="s1-t1" name="Test print text1" line="5">
 <kw name="nickname" library="resource">
 <kw name="Log To Console" library="BuiltIn">
 <arg>sunday</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221129 13:36:55.526" endtime="20221129 13:36:55.527"/>
+<status status="PASS" starttime="20221129 17:15:02.979" endtime="20221129 17:15:02.979"/>
 </kw>
-<status status="PASS" starttime="20221129 13:36:55.526" endtime="20221129 13:36:55.527"/>
+<status status="PASS" starttime="20221129 17:15:02.978" endtime="20221129 17:15:02.979"/>
 </kw>
-<status status="PASS" starttime="20221129 13:36:55.525" endtime="20221129 13:36:55.527"/>
+<status status="PASS" starttime="20221129 17:15:02.977" endtime="20221129 17:15:02.979"/>
 </test>
 <test id="s1-t2" name="Test print text2" line="8">
 <kw name="Log To Console" library="BuiltIn">
 <arg>${MESSAGE}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221129 13:36:55.528" endtime="20221129 13:36:55.529"/>
+<status status="PASS" starttime="20221129 17:15:02.981" endtime="20221129 17:15:02.981"/>
 </kw>
-<status status="PASS" starttime="20221129 13:36:55.528" endtime="20221129 13:36:55.529"/>
+<status status="PASS" starttime="20221129 17:15:02.980" endtime="20221129 17:15:02.982"/>
 </test>
 <test id="s1-t3" name="Test openBrowser" line="12">
 <kw name="Open Browser" library="Selenium2Library">
 <arg>https://www.google.co.th/?hl=th</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221129 13:36:55.532" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.th/?hl=th'.</msg>
-<status status="PASS" starttime="20221129 13:36:55.530" endtime="20221129 13:36:59.667"/>
+<msg timestamp="20221129 17:15:02.986" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.th/?hl=th'.</msg>
+<status status="PASS" starttime="20221129 17:15:02.985" endtime="20221129 17:15:06.953"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221129 13:36:59.668" endtime="20221129 13:36:59.917"/>
+<status status="PASS" starttime="20221129 17:15:06.953" endtime="20221129 17:15:07.123"/>
 </kw>
-<status status="PASS" starttime="20221129 13:36:55.530" endtime="20221129 13:36:59.918"/>
+<status status="PASS" starttime="20221129 17:15:02.984" endtime="20221129 17:15:07.123"/>
 </test>
 <test id="s1-t4" name="Test openBrowser Login" line="16">
 <kw name="Open Browser To Login Page" library="resource">
@@ -40,41 +40,42 @@
 <arg>${SERVER}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221129 13:36:59.925" level="INFO">Opening browser 'chrome' to base url 'http://localhost:9080/Internship_Management_System_G13/'.</msg>
-<status status="PASS" starttime="20221129 13:36:59.924" endtime="20221129 13:37:02.394"/>
+<msg timestamp="20221129 17:15:07.126" level="INFO">Opening browser 'chrome' to base url 'http://localhost:9080/Internship_Management_System_G13/'.</msg>
+<status status="PASS" starttime="20221129 17:15:07.126" endtime="20221129 17:15:09.624"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221129 13:37:02.394" endtime="20221129 13:37:02.529"/>
+<status status="PASS" starttime="20221129 17:15:09.624" endtime="20221129 17:15:09.761"/>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <arg>${DELAY}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20221129 13:37:02.531" endtime="20221129 13:37:02.533"/>
+<status status="PASS" starttime="20221129 17:15:09.761" endtime="20221129 17:15:09.761"/>
 </kw>
 <kw name="Login Page Should Be Open" library="resource">
 <kw name="Title Should Be" library="Selenium2Library">
-<arg>ฝึกงาน/สหกิจศึกษา</arg>
+<arg>ฝึกงาน/สหกิจศึกษาdddd</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20221129 13:37:03.564" level="INFO">Page title is 'ฝึกงาน/สหกิจศึกษา'.</msg>
-<status status="PASS" starttime="20221129 13:37:02.535" endtime="20221129 13:37:03.564"/>
+<msg timestamp="20221129 17:15:11.910" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221129 17:15:11.911" level="FAIL">Title should have been 'ฝึกงาน/สหกิจศึกษาdddd' but was 'ฝึกงาน/สหกิจศึกษา'.</msg>
+<status status="FAIL" starttime="20221129 17:15:09.762" endtime="20221129 17:15:11.916"/>
 </kw>
-<status status="PASS" starttime="20221129 13:37:02.534" endtime="20221129 13:37:03.564"/>
+<status status="FAIL" starttime="20221129 17:15:09.762" endtime="20221129 17:15:11.916"/>
 </kw>
-<status status="PASS" starttime="20221129 13:36:59.923" endtime="20221129 13:37:03.564"/>
+<status status="FAIL" starttime="20221129 17:15:07.124" endtime="20221129 17:15:11.916"/>
 </kw>
-<status status="PASS" starttime="20221129 13:36:59.920" endtime="20221129 13:37:03.565"/>
+<status status="FAIL" starttime="20221129 17:15:07.124" endtime="20221129 17:15:11.917">Title should have been 'ฝึกงาน/สหกิจศึกษาdddd' but was 'ฝึกงาน/สหกิจศึกษา'.</status>
 </test>
-<status status="PASS" starttime="20221129 13:36:55.340" endtime="20221129 13:37:03.568"/>
+<status status="FAIL" starttime="20221129 17:15:02.678" endtime="20221129 17:15:11.919"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="4" fail="0" skip="0" id="s1" name="First Robot">First Robot</stat>
+<stat pass="3" fail="1" skip="0" id="s1" name="First Robot">First Robot</stat>
 </suite>
 </statistics>
 <errors>
